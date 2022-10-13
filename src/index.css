@@ -16,7 +16,9 @@
 }
 body {
   min-height: 100vh;
-  background-color: #CCFFFF;
+/*   background-color: #CCFFFF; */
+/* dãy màu chuyển griadian	 */
+	 background: linear-gradient(to top left, #ff9999 0%, #99ffcc 100%);
   color: var(--font-color);
   font-family: "Nunito", sans-serif;
   padding: 80px 0;
