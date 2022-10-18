@@ -281,7 +281,7 @@ button.btn-delete-all {
    box-shadow:         0px 8px 7px rgba(50, 50, 50, 0.93);
 }
 
-#menu ul li :hover 
+#menu ul li a:hover 
 {
    color: #FFF;
    background-color: #e71445;
