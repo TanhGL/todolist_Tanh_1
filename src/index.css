@@ -16,15 +16,19 @@
 }
 body {
   min-height: 100vh;
-/*   background-color: #CCFFFF; */
-/* dãy màu chuyển griadian	 */
-	 background: linear-gradient(to top left, #ff9999 0%, #99ffcc 100%);
+  /* màu phần thân  */
+  /* background-color: #CCFFFF; */
+  background: linear-gradient(to top left, #ff9999 0%, #99ffcc 100%);
   color: var(--font-color);
   font-family: "Nunito", sans-serif;
   padding: 80px 0;
   position: relative;
   font-size: 100%;
   transition: all 0.3s linear;
+  
+}
+.T{
+  background-color: #7fffd4;
 }
 .container {
   width: 80%;
@@ -32,13 +36,20 @@ body {
   padding: 30px;
   margin: 0 auto;
   margin-top: 60px;
+  border: #000 solid 1px;
+/* sửa màu nền  */
+/* khung chứa các Task */
     background: var(--alt-bg-color);
+    background-color: #eba90d;
+  
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 0 20px 0px #00000045;
   border-width: 3px;
-  border-color: red;
+  border-color: #000;
 }
+
+/* theo đúng kích thước mobile, tablet của phần Container */
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -52,6 +63,7 @@ body {
   gap: 1%;
   margin-bottom: 50px;
 }
+/* theo đúng kích thước mobile, tablet của phần Container ->head */
 @media (max-width: 768px) {
   .container .head {
     grid-template-columns: 1fr;
@@ -77,11 +89,14 @@ button {
   font-weight: 500;
   font-family: inherit;
   color:#000;  
+  background-color: #0eec16;
   /* MÀU CHỮ CỦA CÁC NÚT */
   transition: all 0.3s ease;
 }
 button:hover {
+  color: #fff;
   opacity: 0.7;
+  background-color: #e80fa3;
 }
 .filter {
   margin: 0 auto 40px;
@@ -89,6 +104,15 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 5px;
+/* background-color: #6790b94d; */
+
+  /* background-color: #0d1202;
+  -webkit-box-shadow: 0px 4px 3px rgba(10, 30, 10, 0.93);
+  -moz-box-shadow:    0px 4px 3px rgba(10, 30, 10, 0.93);
+  box-shadow:         0px 4px 3px rgba(10, 30, 10, 0.93);
+ */
+
+
 }
 @media (max-width: 576px) {
   .filter {
@@ -99,6 +123,9 @@ button:hover {
   background-color: var(--secondary-color);
   color: #333;
 }
+
+
+/* nhieemj vuj */
 .tasks-wrapper {
   list-style: none;
   padding: 0 50px;
@@ -116,7 +143,9 @@ button:hover {
   }
 }
 .task {
+  /* màu của các nhiệm vụ  */
   background-color: var(--primary-color);
+  /* background-color: pink; */
   padding: 4px 20px 5px 30px;
   border-radius: 10px;
   display: flex;
@@ -132,7 +161,8 @@ button:hover {
 }
 .task button {
   background-color: transparent;
-  color: var(--alt-font-color);
+  /* color: var(--alt-font-color); */
+  color: #240dd3;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -198,6 +228,10 @@ button.btn-delete-all {
 .color-container > span {
   border-radius: 5px;
 }
+
+
+
+/* màu thanh kéo */
 ::-webkit-scrollbar {
   width: 0.5rem;
   border-radius: 10px;
@@ -212,6 +246,9 @@ button.btn-delete-all {
   border-radius: 10px;
   height: 50px;
 }
+
+
+/* kết thúc màu thanh kéo */
 .preventClick {
   pointer-events: none;
 }
@@ -246,14 +283,14 @@ button.btn-delete-all {
 }
 #menu ul li a:link 
 {
-   color: #000;
+   color: rgb(240, 10, 10);
    text-decoration: none;
    text-transform: uppercase;
    padding-top: 20px;
    padding-bottom: 20px;
    padding-left: 20px;
    padding-right: 20px;
-   background-color: #76ff76;
+   background-color: #81B101;
    width: 600px;
    height:40px;
    border-radius: 15px;
@@ -274,11 +311,16 @@ button.btn-delete-all {
               
 #menu ul li a
 {
+   color: #FFF;
    background-color: #81B101;
-} 
+   -webkit-box-shadow: 0px 8px 7px rgba(50, 50, 50, 0.93);
+   -moz-box-shadow:    0px 8px 7px rgba(50, 50, 50, 0.93);
+   box-shadow:         0px 8px 7px rgba(50, 50, 50, 0.93);
+}
 
 #menu ul li a:hover 
 {
+  /* đổ bóng */
    color: #FFF;
    background-color: #e71445;
    -webkit-box-shadow: 0px 8px 7px rgba(50, 50, 50, 0.93);
